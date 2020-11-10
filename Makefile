@@ -76,7 +76,6 @@ test/e2e-local-image: cluster/prepare setup/operator-sdk
 test/coverage/prepare:
 	@echo Preparing coverage file:
 	@echo "mode: count" > cover-all.coverprofile
-	@echo "mode: count" > cover-e2e.coverprofile
 	@tail -n +2 cover-unit.coverprofile >> cover-all.coverprofile
 	@tail -n +2 cover-e2e.coverprofile >> cover-all.coverprofile
 	@echo Running test coverage generation:
