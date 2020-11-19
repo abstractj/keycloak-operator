@@ -169,7 +169,6 @@ setup/minikube:
 	@sudo minikube start --vm-driver=none
 	@sudo ./hack/modify_etc_hosts.sh "keycloak.local"
 	@sudo minikube addons enable ingress
-	@sudo chown -R ${USER} $HOME/.kube $HOME/.minikube
 
 .PHONY: test/goveralls
 test/goveralls: test/coverage/prepare
