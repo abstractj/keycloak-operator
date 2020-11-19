@@ -20,7 +20,6 @@ jobs:
     - name: Setup minikube
       run: |
         make setup/minikube
-        sudo chown -R $USER $HOME/.kube $HOME/.minikube
         make cluster/prepare 
         make test/e2e test/goveralls
     - name: After failure
