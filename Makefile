@@ -157,8 +157,8 @@ code/lint:
 ##############################
 # CI                         #
 ##############################
-.PHONY: setup/minikube
-setup/minikube:
+.PHONY: setup/github
+setup/github:
 	@echo Installing Kubectl
 	@curl -Lo kubectl ${KUBECTL_DOWNLOAD_URL} && chmod +x kubectl && sudo mv kubectl /usr/local/bin/
 	@echo Installing Minikube
